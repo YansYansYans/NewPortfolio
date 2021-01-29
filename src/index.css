@@ -1,0 +1,9 @@
+body, html {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+html {
+	scroll-behavior: smooth;
+  }
