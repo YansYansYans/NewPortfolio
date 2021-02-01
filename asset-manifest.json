@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/NewPortfolio/static/css/main.d65ef29a.chunk.css",
+    "main.js": "/NewPortfolio/static/js/main.23b62a57.chunk.js",
+    "main.js.map": "/NewPortfolio/static/js/main.23b62a57.chunk.js.map",
+    "runtime-main.js": "/NewPortfolio/static/js/runtime-main.9a212ffe.js",
+    "runtime-main.js.map": "/NewPortfolio/static/js/runtime-main.9a212ffe.js.map",
+    "static/js/2.eca573fb.chunk.js": "/NewPortfolio/static/js/2.eca573fb.chunk.js",
+    "static/js/2.eca573fb.chunk.js.map": "/NewPortfolio/static/js/2.eca573fb.chunk.js.map",
+    "index.html": "/NewPortfolio/index.html",
+    "precache-manifest.552b1e8dcc0df3da955cd20304087075.js": "/NewPortfolio/precache-manifest.552b1e8dcc0df3da955cd20304087075.js",
+    "service-worker.js": "/NewPortfolio/service-worker.js",
+    "static/css/main.d65ef29a.chunk.css.map": "/NewPortfolio/static/css/main.d65ef29a.chunk.css.map",
+    "static/js/2.eca573fb.chunk.js.LICENSE.txt": "/NewPortfolio/static/js/2.eca573fb.chunk.js.LICENSE.txt",
+    "static/media/arrowBottom.png": "/NewPortfolio/static/media/arrowBottom.9f59c15d.png",
+    "static/media/back.svg": "/NewPortfolio/static/media/back.48d5721f.svg",
+    "static/media/ball.png": "/NewPortfolio/static/media/ball.a598962f.png",
+    "static/media/burger.png": "/NewPortfolio/static/media/burger.50811a77.png",
+    "static/media/communication.png": "/NewPortfolio/static/media/communication.ef32a30d.png",
+    "static/media/concept.png": "/NewPortfolio/static/media/concept.1319c447.png",
+    "static/media/cursor.png": "/NewPortfolio/static/media/cursor.fa038467.png",
+    "static/media/dalil.png": "/NewPortfolio/static/media/dalil.330686b6.png",
+    "static/media/design.png": "/NewPortfolio/static/media/design.8881da4e.png",
+    "static/media/dev.png": "/NewPortfolio/static/media/dev.861e3560.png",
+    "static/media/familit.png": "/NewPortfolio/static/media/familit.671e6098.png",
+    "static/media/figure.svg": "/NewPortfolio/static/media/figure.6a8e3d70.svg",
+    "static/media/grille.png": "/NewPortfolio/static/media/grille.ea76484a.png",
+    "static/media/hand.png": "/NewPortfolio/static/media/hand.9784773b.png",
+    "static/media/hand2.png": "/NewPortfolio/static/media/hand2.695a8477.png",
+    "static/media/logo1.png": "/NewPortfolio/static/media/logo1.fea44a4e.png",
+    "static/media/nebularts.png": "/NewPortfolio/static/media/nebularts.4ba7fe2f.png",
+    "static/media/pc.png": "/NewPortfolio/static/media/pc.87a84fdc.png",
+    "static/media/pen.png": "/NewPortfolio/static/media/pen.14932c74.png",
+    "static/media/phone.png": "/NewPortfolio/static/media/phone.6403f785.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a212ffe.js",
+    "static/js/2.eca573fb.chunk.js",
+    "static/css/main.d65ef29a.chunk.css",
+    "static/js/main.23b62a57.chunk.js"
+  ]
+}
