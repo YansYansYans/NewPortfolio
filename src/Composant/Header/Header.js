@@ -26,11 +26,6 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
   },
-  root: {
-    width: "100%",
-    borderRadius: "20px",
-    height: "70px"
-  },
 });
 
 function Header() {
@@ -104,7 +99,7 @@ function Header() {
       <div className={header ? 'header active' : 'header'}>
         <div className="headerLeft">
           <Fade left>
-          <a href="/">
+          <a href="/NewPortfolio">
             <img src={logo} />
           </a>
           </Fade>
@@ -158,7 +153,7 @@ function Header() {
         </div>
       </div>
       <div className="headerMobile">
-        <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+        <BottomNavigation value={value} onChange={handleChange} className="BottomNavigation">
           <BottomNavigationAction href="#hero" label="Home" value="Home" icon={<Home />} />
           <BottomNavigationAction href="#hero2" label="Profil" value="Profil" icon={<AccountBox />} />
           <BottomNavigationAction href="#hero3" label="Compétence" value="Compétence" icon={<BusinessCenter />} />

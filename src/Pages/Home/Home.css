@@ -3,7 +3,7 @@
 .hero {
   background-color: white;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
 }
@@ -270,6 +270,10 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+
+.hero2 .hero__block a {
+  text-decoration: none;
 }
 
 .hero2 .hero__block .btnContact {
@@ -1049,6 +1053,10 @@
   text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
 }
 
+.hero7 .networkMobil {
+  display: none;
+}
+
 .hero7 .hero__arrow__big {
   background-color: #5468e7;
   width: 1000px;
@@ -1674,19 +1682,23 @@
 
 @media all and (max-width: 530px) {
   .hero {
-    height: 100vh;
+    height: 90vh;
+    background-color: #5468e7;
   }
   .hero .hero__title {
-    top: 40%;
+    top: 50%;
   }
   .hero .hero__arrow {
-    top: 75%;
+    display: none;
   }
   .hero2 .hero__title {
-    font-size: 1.6em;
-    margin-left: 25px;
+    text-align: left;
+    padding-right: 0px;
+    font-size: 1.5em;
+    margin-left: auto;
     margin-top: 25px;
-    padding-right: 25px;
+    margin-right: auto;
+    width: 90%;
   }
   .hero2 .hero__arrow {
     top: 50%;
@@ -1738,14 +1750,18 @@
     margin-left: 0px;
   }
   .hero3 .hero__title {
-    font-size: 1.4em;
-    margin-left: 25px;
-    padding-right: 25px;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    width: 90%;
   }
   .hero3 .hero__arrow {
-    font-size: 3em;
-    margin-top: 50px;
-    width: 95%;
+    font-size: 2.8em;
+    margin-top: 25px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-pack: center;
@@ -1788,7 +1804,7 @@
     display: none;
   }
   .hero4 .hero__arrow__big {
-    margin-top: 50px;
+    margin-top: 25px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1823,16 +1839,34 @@
     display: none;
   }
   .hero5 {
-    min-height: 200vh;
+    min-height: auto;
   }
   .hero5 .hero__title {
-    margin-top: 50px;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    width: 90%;
   }
   .hero5 .hero__arrow__big {
-    width: 80%;
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 10px 1px transparent;
+            box-shadow: 0px 10px 1px transparent;
+  }
+  .hero5 .hero__arrow__big .hero__arrow__block {
+    height: 300px;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 1px #ebebeb;
+            box-shadow: 0px 10px 1px #ebebeb;
   }
   .hero5 .hero__arrow__big .hero__arrow__block div img {
     width: 40%;
+    height: auto;
   }
   .hero5 .hero__arrow6 {
     display: none;
@@ -1841,10 +1875,17 @@
     min-height: 100vh;
   }
   .hero6 .hero__title {
-    margin-top: 0px;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    width: 90%;
   }
   .hero6 .hero__arrow__big {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 25px;
   }
   .hero6 .hero__arrow__big .hero__arrow__block {
     margin: 20px;
@@ -1869,8 +1910,53 @@
     overflow: hidden;
   }
   .hero7 .hero__title {
-    font-size: 1.5em;
-    margin-top: 50px;
+    text-align: left;
+    padding-right: 0px;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: auto;
+    width: 90%;
+  }
+  .hero7 .networkMobil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: rgba(84, 104, 231, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    -webkit-box-shadow: 0px 10px 1px #dfdfdf;
+            box-shadow: 0px 10px 1px #dfdfdf;
+    margin-bottom: 25px;
+  }
+  .hero7 .networkMobil a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
+  .hero7 .networkMobil div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 15px;
+  }
+  .hero7 .networkMobil div a {
+    margin-bottom: 0px;
+    font-size: 3em;
   }
   .hero7 .hero__arrow__big {
     width: 90%;
@@ -1886,6 +1972,8 @@
     -webkit-transform: inherit;
             transform: inherit;
     position: relative;
+    -webkit-box-shadow: 0px 10px 1px #dfdfdf;
+            box-shadow: 0px 10px 1px #dfdfdf;
   }
   .hero7 .hero__arrow__big form {
     padding-top: 20px;
@@ -1929,6 +2017,7 @@
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 60px;
   }
   .hero7 .hero__arrow6 {
     display: none;

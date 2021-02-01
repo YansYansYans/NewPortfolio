@@ -1,7 +1,7 @@
 .hero {
     background-color: white;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
 
@@ -229,7 +229,9 @@
         display: flex;
         align-items: center;
         z-index: 100;
-
+        & a {
+            text-decoration: none;
+        }
         & .btnContact {
             margin-left: 25px;
             width: 250px;
@@ -870,7 +872,9 @@
             text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         }
     }
-
+    & .networkMobil {
+        display: none;
+    }
     & .hero__arrow__big {
         background-color: #5468e7;
         width: 1000px;
@@ -1660,26 +1664,27 @@
 
 @media all and (max-width: 530px) {
     .hero {
-        height: 100vh;
-
+        height: 90vh;
+        background-color: #5468e7;
         & .hero__title {
-            top: 40%;
+            top: 50%;
         }
 
         & .hero__arrow {
-            top: 75%;
+            display: none;
 
         }
     }
 
     .hero2 {
-
         & .hero__title {
-            font-size: 1.6em;
-            margin-left: 25px;
+            text-align: left;
+            padding-right: 0px;
+            font-size: 1.5em;
+            margin-left: auto;
             margin-top: 25px;
-            padding-right: 25px;
-
+            margin-right: auto;
+            width: 90%;
         }
 
         & .hero__arrow {
@@ -1753,15 +1758,19 @@
     .hero3 {
 
         & .hero__title {
-            font-size: 1.4em;
-            margin-left: 25px;
-            padding-right: 25px;
+            text-align: center;
+            padding-right: 0px;
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-right: auto;
+            width: 90%;
         }
 
         & .hero__arrow {
-            font-size: 3em;
-            margin-top: 50px;
-            width: 95%;
+            font-size: 2.8em;
+            margin-top: 25px;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
             justify-content: center;
@@ -1818,9 +1827,8 @@
     }
 
     .hero4 {
-
         & .hero__arrow__big {
-            margin-top: 50px;
+            margin-top: 25px;
             flex-direction: column;
             justify-content: center;
             padding-bottom: 50px;
@@ -1859,21 +1867,31 @@
     }
 
     .hero5 {
-        min-height: 200vh;
-
+        min-height: auto;
         & .hero__title {
-            margin-top: 50px;
-
+            text-align: center;
+            padding-right: 0px;
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-right: auto;
+            width: 90%;
         }
 
         & .hero__arrow__big {
-            width: 80%;
-
+            margin-top: 50px;
+            width: 90%;
+            height: 100%;
+            background-color: transparent;
+            box-shadow: 0px 10px 1px transparent;
             & .hero__arrow__block {
-
+                height: 300px;
+                width: 100%;
+                box-shadow: 0px 10px 1px #ebebeb;
                 & div {
                     & img {
                         width: 40%;
+                        height: auto;
                     }
                 }
             }
@@ -1887,13 +1905,19 @@
 
     .hero6 {
         min-height: 100vh;
-
         & .hero__title {
-            margin-top: 0px;
+            text-align: center;
+            padding-right: 0px;
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-right: auto;
+            width: 90%;
         }
 
         & .hero__arrow__big {
-            margin-bottom: 50px;
+            margin-bottom: 0px;
+            margin-top: 25px;
 
             & .hero__arrow__block {
                 margin: 20px;
@@ -1928,10 +1952,44 @@
         overflow: hidden;
 
         & .hero__title {
-            font-size: 1.5em;
-            margin-top: 50px;
+            text-align: left;
+            padding-right: 0px;
+            font-size: 1.3em;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-right: auto;
+            width: 90%;
         }
-
+        .networkMobil {
+            display: flex;
+            flex-direction: column;
+            width:90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            background-color:rgba(84, 104, 231, 0.7);
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            padding: 20px;
+            box-shadow: 0px 10px 1px #dfdfdf;
+            margin-bottom: 25px;
+            & a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2em;
+                margin-bottom: 25px;
+            }
+            & div {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                & a {
+                    margin-bottom: 0px;
+                    font-size: 3em;
+                }
+            }
+        }
         & .hero__arrow__big {
             width: 90%;
             height: auto;
@@ -1945,7 +2003,7 @@
             top: inherit;
             transform: inherit;
             position: relative;
-
+            box-shadow: 0px 10px 1px #dfdfdf;
             & form {
                 padding-top: 20px;
                 width: 90%;
@@ -1978,6 +2036,7 @@
                     padding: 20px;
                     margin-top: 40px;
                     margin-bottom: 20px;
+                    height: 60px;
                 }
             }
         }

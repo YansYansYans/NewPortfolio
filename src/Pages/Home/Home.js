@@ -105,7 +105,7 @@ function HomePage() {
         <div class="hero__arrow4"><img src={Burger}/></div>  
         <div class="hero__arrow8"><Zoom><img src={Grille}/></Zoom></div> 
         <div class="hero__arrow7"> <Fade right><img src={Back}/> </Fade></div>
-        <div class="hero__block"><Fade right>Un projet ?<button className="btnContact">Contactez-moi</button></Fade></div>
+        <div class="hero__block"><Fade right>Un projet ?<a href="#hero7"><button className="btnContact">Contactez-moi</button></a></Fade></div>
         <div class="hero__arrow6"><a href="#hero3"><Fade bottom><img src={ArrowBottom}/></Fade></a></div>
       </div>
       <div id="hero3" class="hero3"> 
@@ -321,6 +321,26 @@ function HomePage() {
             </div>
             <input type="submit" class="send" value="Envoyer"/>
           </form>
+        </div>
+        <div className="networkMobil">
+          <a href="tel:+33611838856">
+            0770453527
+          </a>
+          <br></br>
+          <a href="mailto:yannis.aitkhelifa@gmail.com">
+            yannis.aitkhelifa@gmail.com
+          </a>
+          <div>
+            <a href="https://www.malt.fr/profile/yannisaitkhelifa">
+              <BsChatSquareQuoteFill/>
+            </a>
+            <a href="https://www.linkedin.com/in/yannis-ait-khelifa-1648331ab/">
+              <SiLinkedin/>
+            </a>
+            <a href="https://github.com/YansYansYans">
+              <SiGithub/>
+            </a>
+          </div>
         </div>
         <div className="hero__arrow__bigter">
           <div className="p">

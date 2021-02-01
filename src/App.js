@@ -13,7 +13,7 @@ function App() {
     <Suspense fallback={(<div>Chargement...</div>)}>
       <Header />
         <Switch>
-          <Route exact path="/" component={(HomePage)} />
+          <Route exact path="/NewPortfolio" component={(HomePage)} />
         </Switch>
       <Footer />
     </Suspense>

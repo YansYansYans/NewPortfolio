@@ -187,17 +187,27 @@
     bottom: 0;
     left: 0;
     z-index: 50000;
-    width: 97.5%;
+    width: 100%;
     background-color: white;
-    box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.2);
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-    margin-bottom: 5px;
+    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+    height: 80px;
+  }
+  .headerMobile .BottomNavigation {
+    width: 100%;
     border-radius: 20px;
-    height: 70px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .headerMobile .BottomNavigation .MuiBottomNavigationAction-iconOnly {
+    min-width: 30px;
+    margin-top: 60px;
   }
 }
 /*# sourceMappingURL=Header.css.map */
