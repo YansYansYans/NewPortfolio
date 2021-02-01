@@ -1,12 +1,570 @@
+$white: #ffffff;
+$grey:  #f8f5f9;
+$grey1:  #f0f0f0;
+$grey2:  #b8b8b8;
+$grey3:  #606060;
+$grey3:  #adadad;
+$black: #121212;
+$black2:rgb(44, 44, 44);
+$blue: #232340;
+$blue2: #252733;
+$blue3: #d1ecfd;
+$yellow: #e99e2d;
+$yellow2: #b67b22;
+$violet1: #4550e8;
+$violet2: #5468e7;
+$violet3: #3b4bb1;
+
+@media (prefers-color-scheme: light){
+    .hero {
+        background-color: $white;
+        .hero__title__hero {
+            color: $black;
+            text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
+            & span {
+                color: $yellow;
+            }
+        }
+    
+        .cube {
+            border: solid 1px darken($violet1, 8%);
+            &:nth-child(2n) {
+                border-color: lighten($violet1, 10%);
+            }
+        }
+    }
+    .hero2 {
+        background-color: $grey;
+        & .hero__title {
+            color: $black;
+    
+            & span {
+                color: $violet1;
+                text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
+            }
+        }
+        & .hero__block {
+            color: $black;
+    
+            & .btnContact {
+                background-color: $grey;
+                color: $violet1;
+                border: 2px solid $violet1;
+            }
+    
+            & .btnContact:hover {
+                background-color: $violet1;
+                color: $white;
+            }
+        }
+    }
+    .hero3 {
+        background-color: $blue;
+        & .hero__title {
+            color:$grey;
+            & span {
+                color: $yellow;
+                text-shadow: 7px 5px 11px rgba(0, 0, 0, 1);
+            }
+        }
+    
+        & .hero__arrow {
+            & .divIcon {
+                color: $white;
+            }
+            & .divIcon:hover {
+                color:$grey2;
+            }
+        }
+    }
+    .hero4 {
+        background-color: $blue;
+        & .hero__arrow__big {
+    
+            & .hero__arrow1 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $white;
+                }
+    
+                & .text {
+                    color: $white;
+                }
+            }
+    
+            & .hero__arrow1:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+    
+            & .hero__arrow2 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $white;
+                }
+    
+                & .text {
+                    color: $white;
+                }
+            }
+    
+            & .hero__arrow2:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+    
+            & .hero__arrow4 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $white;
+                }
+    
+                & .text {
+                    color: $white;
+                }
+            }
+    
+            & .hero__arrow4:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+        }
+    }
+    .hero5 {
+        background-color: $grey;
+        & .hero__title {
+            color: $black;
+            & span {
+                color: $violet1;
+                text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
+            }
+        }
+    
+        & .hero__arrow__big {
+            background-color: $white;
+            box-shadow: 0px 10px 1px $grey1;
+    
+            & .hero__arrow__block {
+                background-color: $white;
+    
+                & div {
+    
+                    & p {
+                        color: $black;
+                    }
+                }
+            }
+            & .hero__arrow__block:hover {
+                background-color: $violet1;
+                box-shadow: 0px 10px 1px $grey1;
+                & p {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .hero6 {
+        background-color: $grey;
+        & .hero__title {
+            color: $black;
+            & span {
+                color: $violet1;
+                text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
+            }
+        }
+        & .hero__arrow__big {
+            & .hero__arrow__block {
+                & .btnPlus {
+                    background-color: $violet1;
+                    color: $white;
+                }
+            }
+        }
+    
+        & .hero__block {
+            color: $black;
+    
+            & .btnContact {
+                background-color: $grey;
+                color: $violet1;
+                border: 2px solid $violet1;
+            }
+    
+            & .btnContact:hover {
+                background-color: $violet1;
+                color: $white;
+            }
+        }
+    }
+    .hero7 {
+        background-color: $white;
+        & .hero__title {
+            color: $black;
+            & span {
+                color: $violet1;
+                text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
+            }
+        }
+    
+        & .hero__arrow__big {
+            background-color: $violet2;
+            & form {
+                & .send {
+                    background-color: $white;
+                    color: $violet2;
+                    border: 2px solid $white;
+                }
+                & .send:hover {
+                    background-color: $violet2;
+                    color: $white;
+                    border: 2px solid $white;
+                }
+            }
+        }
+        & .hero__arrow__bigbis {
+            background-color: $blue3;
+        }
+        & .hero__arrow__bigter {
+            & .p {
+                & a {
+                    color: $white;
+                }
+                & a:hover {
+                    color: $violet2;
+                }
+            }
+        }
+    }
+    .hero8 {
+        background-color: $white;
+        & .hero__arrow__big2 {
+            color: $grey3;
+        }
+        & .hero__arrow__big3 {
+            border-top: 1px solid $grey2;
+            color:$grey3;
+            & .right {
+                & a {
+                    color:$grey3;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 530px) {
+        .hero {
+            background-color: $white;
+        }
+        .hero5 {
+            & .hero__arrow__big {
+                & .hero__arrow__block {
+                    box-shadow: 0px 10px 1px #ebebeb;
+                }
+            }
+        }
+        .hero7 {
+            background-color: $white;
+            .networkMobil {
+                background-color: rgba(84, 104, 231, 0.7);
+                box-shadow: 0px 10px 1px #dfdfdf;
+                & a {
+                    color: $white;
+                }
+            }
+    
+            & .hero__arrow__big {
+                background-color: $violet2;
+                box-shadow: 0px 10px 1px #dfdfdf;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .hero {
+        background-color: $black;
+        .hero__title__hero {
+            color: $grey2;
+            text-shadow: 7px 5px 11px transparent;
+            & span {
+                color: $yellow2;
+            }
+        }
+    
+        .cube {
+            border: solid 1px darken($grey2, 8%);
+            &:nth-child(2n) {
+                border-color: lighten($grey2, 10%);
+            }
+        }
+    }
+    .hero2 {
+        background-color: $black;
+        & .hero__title {
+            color: $grey2;
+    
+            & span {
+                color: $violet2;
+                text-shadow: none;
+            }
+        }
+        & .hero__block {
+            color: $grey2;
+    
+            & .btnContact {
+                background-color: $black2;
+                color: $grey;
+                border: 2px solid $black2;
+            }
+    
+            & .btnContact:hover {
+                background-color: $violet2;
+                color: $grey;
+                border: 2px solid $violet2;
+            }
+        }
+    }
+    .hero3 {
+        background-color: $blue2;
+        & .hero__title {
+            color:$grey2;
+            & span {
+                color: $yellow2;
+                text-shadow: 7px 5px 11px rgba(0, 0, 0, 0.5);
+            }
+        }
+    
+        & .hero__arrow {
+            & .divIcon {
+                color: $grey2;
+            }
+            & .divIcon:hover {
+                color:$grey;
+            }
+        }
+    }
+    .hero4 {
+        background-color: $blue2;
+        & .hero__arrow__big {
+    
+            & .hero__arrow1 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $grey;
+                }
+    
+                & .text {
+                    color: $grey;
+                }
+            }
+    
+            & .hero__arrow1:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+    
+            & .hero__arrow2 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $grey;
+                }
+    
+                & .text {
+                    color: $grey;
+                }
+            }
+    
+            & .hero__arrow2:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+    
+            & .hero__arrow4 {
+                box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+    
+                & .number {
+                    color: $grey;
+                }
+    
+                & .text {
+                    color: $grey;
+                }
+            }
+    
+            & .hero__arrow4:active {
+                box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
+            }
+        }
+    }
+    .hero5 {
+        background-color: $black;
+        & .hero__title {
+            color: $grey2;
+            & span {
+                color: $violet2;
+                text-shadow: none;
+            }
+        }
+    
+        & .hero__arrow__big {
+            background-color: $black2;
+            box-shadow: none;
+    
+            & .hero__arrow__block {
+                background-color: $black2;
+    
+                & div {
+    
+                    & p {
+                        color: $grey2;
+                    }
+                }
+            }
+            & .hero__arrow__block:hover {
+                background-color: $violet3;
+                box-shadow: none;
+                & p {
+                    color: $grey2;
+                }
+            }
+        }
+    }
+    .hero6 {
+        background-color: $black;
+        & .hero__title {
+            color: $grey2;
+            & span {
+                color: $violet2;
+                text-shadow: none;
+            }
+        }
+        & .hero__arrow__big {
+            & .hero__arrow__block {
+                & .btnPlus {
+                    background-color: $violet2;
+                    color: $grey1;
+                }
+            }
+        }
+    
+        & .hero__block {
+            color: $grey2;
+    
+            & .btnContact {
+                background-color: $black2;
+                color: $grey;
+                border: 2px solid $black2;
+            }
+    
+            & .btnContact:hover {
+                background-color: $violet2;
+                color: $grey;
+                border: 2px solid $violet2;
+            }
+        }
+    }
+    .hero7 {
+        background-color: $black;
+        & .hero__title {
+            color: $grey2;
+            & span {
+                color: $violet2;
+                text-shadow: none;
+            }
+        }
+    
+        & .hero__arrow__big {
+            background-color: $black2;
+            & form {
+                & input {
+                    background-color: $black;
+                    color: $grey1;
+                }
+                & textarea {
+                    background-color: $black;
+                    color: $grey1;
+                }
+                & .send {
+                    background-color: $black;
+                    color: $grey2;
+                    border: 2px solid $black;
+                }
+                & .send:hover {
+                    background-color: $violet3;
+                    color: $white;
+                    border: 2px solid $violet3;
+                }
+            }
+        }
+        & .hero__arrow__bigbis {
+            background-color: $black2;
+            opacity: 50%;
+        }
+        & .hero__arrow__bigter {
+            & .p {
+                & a {
+                    color: $black2;
+                }
+                & a:hover {
+                    color: $violet2;
+                }
+            }
+        }
+    }
+    .hero8 {
+        background-color: $black;
+        & .hero__arrow__big2 {
+            color: $grey3;
+        }
+        & .hero__arrow__big3 {
+            border-top: 1px solid $grey2;
+            color:$grey3;
+            & .right {
+                & a {
+                    color:$grey3;
+                }
+            }
+        }
+    }
+    body {
+        background-color: $black;
+    }
+    @media all and (max-width: 530px) {
+        .hero {
+            background-color: black;
+        }
+        .hero5 {
+            & .hero__arrow__big {
+                & .hero__arrow__block {
+                    box-shadow: none;
+                }
+            }
+        }
+        .hero7 {
+            background-color: $black;
+            .networkMobil {
+                background-color: rgba(84, 104, 231, 0.5);
+                box-shadow: none;
+                & a {
+                    color: $black;
+                }
+            }
+    
+            & .hero__arrow__big {
+                background-color: $black2;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
 .hero {
-    background-color: white;
     position: relative;
     height: 100vh;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
 
     & .hero__title {
-        color: #121212;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -14,11 +572,9 @@
         font-size: 50px;
         z-index: 1;
         font-weight: 300;
-        text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         text-align: center;
 
         & span {
-            color: #e99e2d;
             font-weight: 600;
 
         }
@@ -52,14 +608,9 @@
         width: 10px;
         height: 10px;
         border-radius: 2px;
-        border: solid 1px darken(#4550e8, 8%);
         transform-origin: top left;
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         animation: cube 20s ease-in forwards infinite;
-
-        &:nth-child(2n) {
-            border-color: lighten(#4550e8, 10%);
-        }
 
         &:nth-child(2) {
             animation-delay: 2s;
@@ -112,7 +663,6 @@
 }
 
 .hero2 {
-    background-color: rgb(240, 240, 240);
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -120,7 +670,6 @@
 
     & .hero__title {
         font-size: 2.5em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         margin-left: 100px;
@@ -130,8 +679,6 @@
 
         & span {
             font-size: 1.5em;
-            color: #4550e8;
-            text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         }
     }
 
@@ -220,7 +767,6 @@
 
     & .hero__block {
         font-size: 2em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         position: absolute;
@@ -229,28 +775,21 @@
         display: flex;
         align-items: center;
         z-index: 100;
+
         & a {
             text-decoration: none;
         }
+
         & .btnContact {
             margin-left: 25px;
             width: 250px;
             display: block;
-            background-color: rgb(240, 240, 240);
-            color: #4550e8;
             height: 65px;
-            border: 2px solid #4550e8;
             font-size: 0.8em;
             font-weight: 600;
             border-radius: 20px;
             font-family: 'Montserrat', sans-serif;
             transition: 300ms;
-
-        }
-
-        & .btnContact:hover {
-            background-color: #4550e8;
-            color: white;
             cursor: pointer;
         }
     }
@@ -329,14 +868,12 @@
 }
 
 .hero3 {
-    background-color: #232340;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
 
     & .hero__title {
         font-size: 2.5em;
-        color: rgb(240, 240, 240);
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         margin-left: 100px;
@@ -347,8 +884,6 @@
 
         & span {
             font-size: 1.5em;
-            color: #e99e2d;
-            text-shadow: 7px 5px 11px rgba(0, 0, 0, 1);
         }
     }
 
@@ -363,7 +898,6 @@
         margin-left: 50px;
 
         & .divIcon {
-            color: white;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -378,7 +912,6 @@
         }
 
         & .divIcon:hover {
-            color: rgb(184, 184, 184);
 
             & span {
                 visibility: visible;
@@ -465,7 +998,6 @@
 }
 
 .hero4 {
-    background-color: #232340;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -490,29 +1022,21 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
             transition: 300ms;
             cursor: pointer;
 
             & .number {
-
                 font-size: 180px;
                 font-weight: 600;
                 line-height: 1.2;
-                color: white;
             }
 
             & .text {
                 font-size: 22px;
                 line-height: 1.33333;
                 letter-spacing: -.2px;
-                color: white;
                 font-weight: 800;
             }
-        }
-
-        & .hero__arrow1:active {
-            box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
         }
 
         & .hero__arrow2 {
@@ -524,29 +1048,21 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
             transition: 300ms;
             cursor: pointer;
 
             & .number {
-
                 font-size: 100px;
                 font-weight: 600;
                 line-height: 1.2;
-                color: white;
             }
 
             & .text {
                 font-size: 20px;
                 line-height: 1.33333;
                 letter-spacing: -.2px;
-                color: white;
                 font-weight: 800;
             }
-        }
-
-        & .hero__arrow2:active {
-            box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
         }
 
         & .hero__arrow4 {
@@ -558,29 +1074,21 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
             transition: 300ms;
             cursor: pointer;
 
             & .number {
-
                 font-size: 140px;
                 font-weight: 600;
                 line-height: 1.2;
-                color: white;
             }
 
             & .text {
                 font-size: 30px;
                 line-height: 1.33333;
                 letter-spacing: -.2px;
-                color: white;
                 font-weight: 800;
             }
-        }
-
-        & .hero__arrow4:active {
-            box-shadow: 0px 23px 51px inset rgba(0, 0, 0, 0.242297);
         }
     }
 
@@ -607,14 +1115,12 @@
 }
 
 .hero5 {
-    background-color: #f8f5f9;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
 
     & .hero__title {
         font-size: 2.5em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         margin-left: 100px;
@@ -623,13 +1129,10 @@
 
         & span {
             font-size: 1.5em;
-            color: #4550e8;
-            text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         }
     }
 
     & .hero__arrow__big {
-        background-color: #ffffff;
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -638,7 +1141,6 @@
         border-radius: 30px;
         display: flex;
         justify-content: space-between;
-        box-shadow: 0px 10px 1px #f0f0f0;
 
         & button {
             border: none;
@@ -652,7 +1154,6 @@
             justify-content: center;
             align-items: center;
             border-radius: 30px;
-            background-color: #ffffff;
             cursor: pointer;
             transition: 300ms;
             height: 400px;
@@ -672,7 +1173,6 @@
                     font-family: 'Lato', sans-serif;
                     font-size: 1.2em;
                     font-weight: 800;
-                    color: #121212;
                 }
             }
         }
@@ -682,13 +1182,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 30px;
-            background-color: #4550e8;
             height: 450px;
-            box-shadow: 0px 10px 1px #dfdfdf;
-
-            & p {
-                color: white;
-            }
         }
     }
 
@@ -716,7 +1210,6 @@
 }
 
 .hero6 {
-    background-color: #f8f5f9;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -724,7 +1217,6 @@
     & .hero__title {
         text-align: right;
         font-size: 2.5em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         padding-right: 100px;
@@ -733,8 +1225,6 @@
 
         & span {
             font-size: 1.5em;
-            color: #4550e8;
-            text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         }
     }
 
@@ -760,8 +1250,6 @@
 
             & .btnPlus {
                 display: flex;
-                background-color: #4550e8;
-                color: white;
                 width: 150px;
                 text-align: center;
                 margin-left: auto;
@@ -793,7 +1281,6 @@
 
     & .hero__block {
         font-size: 2em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         position: absolute;
@@ -810,10 +1297,7 @@
             margin-left: 25px;
             width: 250px;
             display: block;
-            background-color: rgb(240, 240, 240);
-            color: #4550e8;
             height: 65px;
-            border: 2px solid #4550e8;
             font-size: 0.8em;
             font-weight: 600;
             border-radius: 20px;
@@ -823,8 +1307,6 @@
         }
 
         & .btnContact:hover {
-            background-color: #4550e8;
-            color: white;
             cursor: pointer;
         }
     }
@@ -852,7 +1334,6 @@
 }
 
 .hero7 {
-    background-color: white;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -860,7 +1341,6 @@
     & .hero__title {
         text-align: center;
         font-size: 2.5em;
-        color: #121212;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
         margin-top: 150px;
@@ -868,15 +1348,14 @@
 
         & span {
             font-size: 1.5em;
-            color: #4550e8;
-            text-shadow: 7px 5px 11px rgba(118, 118, 118, 0.56);
         }
     }
+
     & .networkMobil {
         display: none;
     }
+
     & .hero__arrow__big {
-        background-color: #5468e7;
         width: 1000px;
         height: 600px;
         margin-top: 150px;
@@ -929,22 +1408,12 @@
                 border-radius: 15px;
                 font-size: 1.2em;
                 cursor: pointer;
-                background-color: white;
-                color: #5468e7;
-                border: 2px solid white;
                 transition: 300ms;
-            }
-
-            & .send:hover {
-                background-color: #5468e7;
-                color: white;
-                border: 2px solid white;
             }
         }
     }
 
     & .hero__arrow__bigbis {
-        background-color: #d1ecfd;
         width: 1000px;
         height: 500px;
         margin-top: 150px;
@@ -975,7 +1444,6 @@
             position: absolute;
             font-family: 'Lato', sans-serif;
             font-size: 1.5em;
-
             top: 75%;
             text-align: right;
             left: 45%;
@@ -988,12 +1456,7 @@
 
             & a {
                 text-decoration: none;
-                color: #ffffff;
                 transition: 300ms;
-            }
-
-            & a:hover {
-                color: #5468e7;
             }
 
             & div {
@@ -1030,9 +1493,7 @@
 }
 
 .hero8 {
-    background-color: white;
     font-family: 'Lato', sans-serif;
-
     overflow: hidden;
     text-align: center;
     width: 1100px;
@@ -1049,7 +1510,6 @@
 
     & .hero__arrow__big2 {
         margin-top: 50px;
-        color: #606060;
         width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -1057,24 +1517,18 @@
 
     & .hero__arrow__big3 {
         margin-top: 100px;
-        border-top: 1px solid #d8d8d8;
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
-        color: #adadad;
         padding-bottom: 30px;
         font-weight: 600;
 
         & .right {
-
             font-size: 1.1em;
             width: 150px;
             display: flex;
             justify-content: space-between;
 
-            & a {
-                color: #adadad;
-            }
         }
     }
 
@@ -1396,9 +1850,10 @@
             }
         }
     }
+
     .hero8 {
         width: 80%;
-    
+
         & .hero__arrow__big2 {
             width: 60%;
         }
@@ -1452,7 +1907,6 @@
 
         & .hero__title {
             font-size: 1.8em;
-            color: #121212;
             font-family: 'Lato', sans-serif;
             font-weight: 900;
             margin-left: 50px;
@@ -1665,7 +2119,8 @@
 @media all and (max-width: 530px) {
     .hero {
         height: 90vh;
-        background-color: #5468e7;
+
+
         & .hero__title {
             top: 50%;
         }
@@ -1868,6 +2323,7 @@
 
     .hero5 {
         min-height: auto;
+
         & .hero__title {
             text-align: center;
             padding-right: 0px;
@@ -1884,10 +2340,11 @@
             height: 100%;
             background-color: transparent;
             box-shadow: 0px 10px 1px transparent;
+
             & .hero__arrow__block {
                 height: 300px;
                 width: 100%;
-                box-shadow: 0px 10px 1px #ebebeb;
+
                 & div {
                     & img {
                         width: 40%;
@@ -1905,6 +2362,7 @@
 
     .hero6 {
         min-height: 100vh;
+
         & .hero__title {
             text-align: center;
             padding-right: 0px;
@@ -1946,7 +2404,6 @@
     }
 
     .hero7 {
-        background-color: white;
         position: relative;
         min-height: 100vh;
         overflow: hidden;
@@ -1960,40 +2417,41 @@
             margin-right: auto;
             width: 90%;
         }
+
         .networkMobil {
             display: flex;
             flex-direction: column;
-            width:90%;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
             margin-top: 25px;
-            background-color:rgba(84, 104, 231, 0.7);
             border-radius: 20px;
             text-align: center;
             font-family: 'Lato', sans-serif;
             padding: 20px;
-            box-shadow: 0px 10px 1px #dfdfdf;
             margin-bottom: 25px;
+
             & a {
-                color: white;
                 text-decoration: none;
                 font-size: 1.2em;
                 margin-bottom: 25px;
             }
+
             & div {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 15px;
+
                 & a {
                     margin-bottom: 0px;
                     font-size: 3em;
                 }
             }
         }
+
         & .hero__arrow__big {
             width: 90%;
             height: auto;
-            background-color: #5468e7;
             margin-top: 50px;
             margin-left: auto;
             margin-right: auto;
@@ -2003,7 +2461,7 @@
             top: inherit;
             transform: inherit;
             position: relative;
-            box-shadow: 0px 10px 1px #dfdfdf;
+
             & form {
                 padding-top: 20px;
                 width: 90%;
@@ -2013,6 +2471,7 @@
                 flex-direction: column;
                 margin-left: auto;
                 margin-right: auto;
+
                 & .inputBox {
                     display: flex;
                     flex-direction: column;
@@ -2045,33 +2504,34 @@
             display: none
         }
     }
+
     .hero8 {
         width: 90%;
         margin-bottom: 80px;
 
-    
+
         & .hero__arrow__big1 {
             margin-top: 50px;
-    
+
             & img {
                 width: 100px;
             }
         }
-    
+
         & .hero__arrow__big2 {
             width: 100%;
             margin-top: 25px;
         }
-    
+
         & .hero__arrow__big3 {
             margin-top: 50px;
             border-top: 2px solid #d8d8d8;
-    
+
             & .right {
                 width: 100px;
             }
         }
-    
+
     }
 }
 

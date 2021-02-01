@@ -50,9 +50,7 @@ function Header() {
 
   const list = (anchor) => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
+      className="list"
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -108,27 +106,27 @@ function Header() {
           <ul>
           <Fade top>
             <li>
-              <a href="#hero">
+              <a className="a__header" href="#hero">
                 HOME
               </a>
             </li>
             <li>
-              <a href="#hero2">
+              <a className="a__header" href="#hero2">
                 PROFIL
               </a>
             </li>
             <li>
-              <a href="#hero3">
+              <a className="a__header" href="#hero3">
                 COMPETENCES
               </a>
             </li>
             <li>
-              <a href="#hero6">
+              <a className="a__header" href="#hero6">
                 REALISATION
               </a>
             </li>
             <li>
-              <a href="#hero7">
+              <a className="a__header" href="#hero7">
                 CONTACT
               </a>
             </li>

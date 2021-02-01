@@ -84,11 +84,12 @@ function HomePage() {
   const handleClose4 = () => {
     setOpen4(false);
   };
+  
 
   return (
     <div>
       <div id="hero" class="hero"> 
-        <div class="hero__title">Bienvenue sur mon <span>Portfolio</span></div>
+        <div class="hero__title hero__title__hero">Bienvenue sur mon <span>Portfolio</span></div>
         <div class="hero__arrow"><a href="#hero2"> <Fade bottom><img src={ArrowBottom}/></Fade></a></div>
         <div class="cube"></div>
         <div class="cube"></div>
